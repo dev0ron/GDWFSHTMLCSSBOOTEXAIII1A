@@ -3,17 +3,23 @@
     margin: 0;
     padding: 0;
 }
+
+.clear{
+    clear: both;
+}
+
 /*--HEADER--*/
 header{
-    height: 20vh;
+    background: white;
+    height: 15vh;
     width: 100vw;
-    display: fixed;
+    position: fixed;
     padding: 0.5rem;
+    /*flex-flow: row wrap;*/
     justify-content: center;
     align-items: center;
 
     border: solid black 1px;
-    list-style: none;
 }
 
 header img{
@@ -26,12 +32,23 @@ header h1{
     font-style: italic;
 }
 header nav{
-    float: right;
     margin-right: 1rem;
 }
-/*--MAIN--*/
 
+header nav ul{
+    float: right;
+    list-style: none;
+}
+/*--MAIN--*/
+main{
+    margin: 2px;
+    padding-top: 18vh;
+}
 /*--FOOTER--*/
+footer{
+    width: 100vw;
+    background: steelblue;
+}
 
 /* MEDIA QUERRY*/
 
