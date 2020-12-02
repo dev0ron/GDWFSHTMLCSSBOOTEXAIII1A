@@ -1,8 +1,37 @@
 /*--GENERAL--*/
-
+*{
+    margin: 0;
+    padding: 0;
+}
 /*--HEADER--*/
+header{
+    height: 20vh;
+    width: 100vw;
+    display: fixed;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
 
+    border: solid black 1px;
+    list-style: none;
+}
+
+header img{
+    display: block;
+    float: left;
+    min-height: 5vh;
+    max-height: 100px;
+}
+header h1{
+    font-style: italic;
+}
+header nav{
+    float: right;
+    margin-right: 1rem;
+}
 /*--MAIN--*/
 
 /*--FOOTER--*/
+
+/* MEDIA QUERRY*/
 
