@@ -1,8 +1,54 @@
 /*--GENERAL--*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clear{
+    clear: both;
+}
 
 /*--HEADER--*/
+header{
+    background: white;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    padding: 0.5rem;
+    /*flex-flow: row wrap;*/
+    justify-content: center;
+    align-items: center;
 
+    border: solid black 1px;
+}
+
+header img{
+    display: block;
+    float: left;
+    min-height: 5vh;
+    max-height: 100px;
+}
+header h1{
+    font-style: italic;
+}
+header nav{
+    margin-right: 1rem;
+}
+
+header nav ul{
+    float: right;
+    list-style: none;
+}
 /*--MAIN--*/
-
+main{
+    margin: 2px;
+    padding-top: 18vh;
+}
 /*--FOOTER--*/
+footer{
+    width: 100vw;
+    background: steelblue;
+}
+
+/* MEDIA QUERRY*/
 
