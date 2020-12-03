@@ -43,10 +43,19 @@ header nav ul{
 /*--MAIN--*/
 main{
     margin: 2px;
+    padding: 2px;
     padding-top: 18vh;
+    background-image: url("img/ifj_logo.png") no-repeat;
+}
+.article{
+    border: solid gray 3px;
+    border-radius: 0 5px 0 5px;
+    margin: 0.5em;
+    padding: 0.2em;
 }
 /*--FOOTER--*/
 footer{
+    border: solid steelblue 3px;
     width: 100vw;
     background: steelblue;
 }
