@@ -1,9 +1,7 @@
 /*--GENERAL--*/
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: url("img/judogi.png")no-repeat top center;
+    background: url("img/judogi.png")no-repeat bottom ;
+    background-size: contain;
     background-attachment: fixed;
     text-shadow: grey 1px 1px;
     padding: 0;
@@ -13,7 +11,9 @@ body{
 .clear{
     clear: both;
 }
-
+ul{
+    justify-content: space-around;
+}
 ul li{
     list-style: none;
 	display: inline-block;
@@ -24,13 +24,14 @@ ul li{
 
 /*--HEADER--*/
 header{
+    display: inline-block;
     height: 15vh;
     min-height: 100px;
     width: 100%;
-    border: solid black 2px;
 }
 
 header img{
+    float: left;
     min-height: 5vh;
     max-height: 100px;
 }
@@ -42,10 +43,14 @@ header h1{
 
 /*--MAIN--*/
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center /*space-around*/;
     margin: 0;
-    padding: 0;
+    padding: 0.2em;
 }
 .article{
+    padding: 0.2em;
     border: solid rgb(43, 42, 42) 1px;
     border-radius: 0 5px 0 5px;
     border-top: none;
@@ -61,13 +66,14 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid steelblue 3px;
+    border: solid rgba(55, 55, 55, 0.5) 3px;
+    border-radius: 4px;
     width: 100%;
-    background: steelblue;
+    background: rgba(55, 55, 55, 0.5);
 }
 
 footer img{
-    width: 25px;
+    width: 20px;
     height: auto;
 
 }
