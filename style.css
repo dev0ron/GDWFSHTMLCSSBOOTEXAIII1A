@@ -1,7 +1,11 @@
 /*--GENERAL--*/
 body{
-    background: url("img/judogi.png")no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("img/judogi.png")no-repeat top center;
     background-attachment: fixed;
+    text-shadow: grey 1px 1px;
     padding: 0;
     margin: 0;
 }
@@ -10,16 +14,20 @@ body{
     clear: both;
 }
 
+ul li{
+    list-style: none;
+	display: inline-block;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+}
+
 /*--HEADER--*/
 header{
-    display: flex;
-    justify-content: space-around;
-    background: white;
     height: 15vh;
     min-height: 100px;
-    width: 100VW;
-    padding: 0.3em;
-    border: solid gray 2px;
+    width: 100%;
+    border: solid black 2px;
 }
 
 header img{
@@ -32,25 +40,19 @@ header h1{
     text-decoration: underline;
 }
 
-header nav ul{
-    list-style: none;
-	display: inline-block;
-    text-decoration: none;
-}
-
 /*--MAIN--*/
 main{
     margin: 0;
     padding: 0;
 }
 .article{
-    border: solid rgb(43, 42, 42) 5px;
+    border: solid rgb(43, 42, 42) 1px;
     border-radius: 0 5px 0 5px;
     border-top: none;
+    border-left: none;
+    box-shadow: lightslategrey 0px 3px 3px 0px;
 }
 .container{
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     margin: 1em;
 }
@@ -60,17 +62,18 @@ footer{
     flex-direction: column;
     justify-content: center;
     border: solid steelblue 3px;
-    width: 100vw;
+    width: 100%;
     background: steelblue;
 }
-footer ul li{
-	display: inline-block;
 
-}
 footer img{
     width: 25px;
     height: auto;
 
+}
+
+#thx{
+    font-size: xx-small;
 }
 
 /* MEDIA QUERRY*/
