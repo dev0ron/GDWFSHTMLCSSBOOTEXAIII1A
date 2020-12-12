@@ -1,86 +1,139 @@
 /*--GENERAL--*/
 body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-flow: column wrap;
     background: url("img/judogi.png")no-repeat bottom ;
     background-size: contain;
     background-attachment: fixed;
-    text-shadow: grey 1px 1px;
-    padding: 0;
-    margin: 0;
+    text-shadow: lightgrey 1px 1px;
+    font-size: 1.3em;
 }
-
 .clear{
     clear: both;
 }
-ul{
-    justify-content: space-around;
+.small{
+    font-size: small;
 }
+
+
+span{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+h2{
+    font-size: 1.8em;
+}
+h3{
+    font-size: 1.4em;
+}
+
 ul li{
     list-style: none;
-	display: inline-block;
+}
+
+/*--NavBar--*/
+
+.main_navBar{
+    background-color: black;
+    position: sticky;
+    bottom:0;
+    left:0;
+    width: 100%;
+    border-radius: 5px;
+    z-index:1;
+}
+.main_navBar ul{
+    justify-content: stretch;
+    border: solid white 2px;
+}
+.main_navBar li{
+    justify-content: stretch;
+    border: solid white 2px;
+}
+.nav_bar{
+    display: inline-block;
     text-decoration: none;
+}
+
+.nav_bar:hover{
     color: red;
-    text-align: center;
 }
 
 /*--HEADER--*/
 header{
-    display: inline-block;
-    height: 15vh;
-    min-height: 100px;
+    margin: 0.2em;
+    display: block;
     width: 100%;
+    max-height: 20vh;
 }
 
 header img{
     float: left;
-    min-height: 5vh;
-    max-height: 100px;
-}
-header h1{
-    text-align: center;
-    font-style: italic;
-    text-decoration: underline;
+    width: 100px;
+    height: 100px;
 }
 
+
 /*--MAIN--*/
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center /*space-around*/;
-    margin: 0;
-    padding: 0.2em;
-}
+
 .article{
+    margin: 0.3em;
     padding: 0.2em;
-    border: solid rgb(43, 42, 42) 1px;
-    border-radius: 0 5px 0 5px;
+    border: solid 2px black;
     border-top: none;
-    border-left: none;
-    box-shadow: lightslategrey 0px 3px 3px 0px;
+    border-radius:0 5px ;
+    box-shadow: 3px 3px 3px lightgrey ;
 }
-.container{
-    justify-content: space-around;
-    margin: 1em;
+.partenaires{
+    max-height: 10vh;
 }
+.partenaires:hover{
+    border: solid red 2px;
+    max-height: 12vh;
+}
+
+main img{
+    max-height: 90vh;
+    max-width: 90vh;
+}
+
 /*--FOOTER--*/
+
 footer{
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     border: solid rgba(55, 55, 55, 0.5) 3px;
     border-radius: 4px;
     width: 100%;
-    background: rgba(55, 55, 55, 0.5);
+    background: rgba(55, 55, 55, 0.65);
+    
 }
 
-footer img{
-    width: 20px;
+footer li{
+    display: inline-block;
+    font-size: small;
+    margin: 0.2em;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;    
+    max-width: 95vw;
+}
+
+.social{
+    max-width: 5vw;
     height: auto;
-
 }
+
 
 #thx{
     font-size: xx-small;
 }
-
-/* MEDIA QUERRY*/
-
