@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta lang="fr">
+    <meta name="viewport" content="width=device-width">
+    <title>Judo Club linéen</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+  <body>
+    <!--<script src="script.js"></script>-->
+    <header>
+      <img src="img/logo.png" alt="club_logo">
+      <span><h1>Judo Club Linéen</h1></span>
+    </header>
+
+    <div class="clear"></div>
+
+    <main>
+
+      <div class="container"></div>
+      <form id="survey-form">
+    	<h2>Formulaire:</h2>
+    	<div class="form-group"><h3>Renseignements:</h3>
+			<label id="name-label" for="name">Nom:</label>
+			<input type="text" name="name" id="name" class="form-control" placeholder="votre nom" required>		
+			<label id="email-label" for="email">Email:</label>
+			<input type="email" name="email" id="email" class="form-control" placeholder="votre email" required="email">
+			<label id="number-label" for="number">TéléPhone:</label>
+			<input type="number" min="0000000000" max="9999999999"name="number" id="number" class="form-control" placeholder="votre numéro" required>
+			<label id="Age-label" for="number">Age<span>(optionnel)</span>:</label>
+			<input type="number" min="16" max="120"name="number" id="Age" class="form-control" placeholder="votre age">				
+		</div>
+    	<div class="form-group"><h3>Sexe:</h3>
+			<select id="dropdown" name="role" class="form-control" 	required="">
+				<option disabled="" selected="" value="">homme/femme/autre	</option>
+				<option value="Homme">Homme</option>
+				<option value="Femme">Femme</option>
+				<option value="Autre">Autre</option>
+				<option value="preferNo">ne souhaite pas répondre</option>
+			</select>
+		</div>
+
+		<div class="form-group"><h3>Objet:</h3>
+			<label>
+				<input type="radio" name="Objet" id="Essai" class="input-radio" value="Essai" checked>Essai
+			</label>		
+			<label>
+				<input type="radio" name="Objet" id="Rendez-vous" class="input-radio" value="Rendez-vous">Rendez-vous
+			</label>
+			<label>
+				<input type="radio" name="Objet" id="Autre" class="input-radio" value="Autre">Autre
+			</label>			
+		</div>
+
+
+
+		<div class="form-group"><h3>Réponse souhaitée par:</h3>
+			<label id="SMS-label" for="SMS">SMS:</label>
+			<input type="checkbox" name="SMS" id="SMS" class="input-checkbox" value="SMS">		
+			<label id="email-label" for="email">Email:</label>
+			<input type="checkbox" name="email" id="email" class="input-checkbox" value="Email">
+			<label id="number-label" for="number">TéléPhone:</label>
+			<input type="checkbox" name="number" id="number" class="input-checkbox" value="TéléPhone">			
+		</div>
+
+		<div class="form-group">
+			<p>Vous avez une suggestion ou un commentaire?</p>
+			<textarea id="comments" class="input-textarea" name="comment" placeholder="Pour un peu plus précisions"></textarea>
+		</div>
+
+		<div class="form-group">
+			<input  id="submit" type="submit">		
+		</div>
+
+    </form>
+
+
+    <div class="clear"></div>
+</div>
+
+    <div class="clear"></div>
+
+    <aside class="side_bare"><h3>Nos partenaires</h3></aside>
+    <a href="https://judocommercy.com/" title="JudoCommercy"><img class='partenaires' src="img/judoCommercy.png"></a> <a href="http://www.alohagrafic.com" title="alohagrafic.com"><img class='partenaires' src="img/alohaGrafic.png"></a> <a href="http://www.immobelis.com" title="immobelis.com"><img class='partenaires' src="img/immobelis.jpeg"></a>
+    </aside>
+
+  </main>
+
+  <footer>
+    <ul><li><img class="social" src="icones/facebook.png" alt="fb_Icon">Facebook</li>
+    <li><img class="social" src="icones/linkedin.png" alt="linkedIn_Icon">LinkedIn</li>
+    <li><img class="social" src="icones/github.png" alt="Github_Icon">Github</li>
+    <li><img class="social" src="icones/twitter.png" alt="Twitter_Icon">Twitter</li></ul>
+    <p>Site réalisé par Dev0ron. N'hésitez à me contacter sur les réseaux sociaux.</p>
+    <div id="thx">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixelperfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  </footer>
+
+  <section class="main_navBar">  
+  <nav>
+      <ul>
+        <li class="nav_bar"><a href="index.html" class="small">Accueil</a></li>
+        <li class="nav_bar"><a href="event.html" class="small">Evénements</a></li>
+        <li class="nav_bar"><a href="sales.html" class="small">Promos</a></li>
+        <li class="nav_bar active"><a href="contact.html" class="small">Contacts</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  </body>
+</html>

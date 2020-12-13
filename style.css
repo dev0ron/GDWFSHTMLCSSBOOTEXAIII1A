@@ -16,6 +16,15 @@ body{
 .small{
     font-size: small;
 }
+.active{
+    background-color: red;
+}
+
+.thumbnail{
+    height: auto;
+    width: 100px;
+
+}
 
 
 span{
@@ -44,26 +53,30 @@ ul li{
     background-color: black;
     position: sticky;
     bottom:0;
-    left:0;
-    width: 100%;
     border-radius: 5px;
     z-index:1;
 }
 .main_navBar ul{
-    justify-content: stretch;
-    border: solid white 2px;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 .main_navBar li{
-    justify-content: stretch;
-    border: solid white 2px;
+    float: left;
 }
-.nav_bar{
-    display: inline-block;
+ li a{
     text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-.nav_bar:hover{
+ li a:hover{
     color: red;
+    background-color: grey;
 }
 
 /*--HEADER--*/
@@ -102,6 +115,12 @@ header img{
 main img{
     max-height: 90vh;
     max-width: 90vh;
+}
+
+#promotion{
+    font-size: xx-large;
+    color: red;
+    text-align: center;
 }
 
 /*--FOOTER--*/
