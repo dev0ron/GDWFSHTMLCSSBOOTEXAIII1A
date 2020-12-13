@@ -96,7 +96,7 @@ header img{
 
 /*--MAIN--*/
 
-.article , form{
+.article , form, #promotion{
     margin: 0.3em;
     padding: 0.2em;
     border: solid 2px black;
