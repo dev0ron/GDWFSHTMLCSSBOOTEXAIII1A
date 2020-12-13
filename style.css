@@ -23,7 +23,8 @@ body{
 .thumbnail{
     height: auto;
     width: 100px;
-
+    float: left;
+    padding-right: 0.2em;
 }
 
 
@@ -83,7 +84,6 @@ ul li{
 header{
     margin: 0.2em;
     display: block;
-    width: 100%;
     max-height: 20vh;
 }
 
@@ -96,13 +96,14 @@ header img{
 
 /*--MAIN--*/
 
-.article{
+.article , form{
     margin: 0.3em;
     padding: 0.2em;
     border: solid 2px black;
     border-top: none;
     border-radius:0 5px ;
-    box-shadow: 3px 3px 3px lightgrey ;
+    box-shadow: 3px 3px 3px lightgrey;
+    min-height: 250px;
 }
 .partenaires{
     max-height: 10vh;
@@ -123,6 +124,8 @@ main img{
     text-align: center;
 }
 
+
+
 /*--FOOTER--*/
 
 footer{
@@ -132,8 +135,8 @@ footer{
     justify-content: space-around;
     border: solid rgba(55, 55, 55, 0.5) 3px;
     border-radius: 4px;
-    width: 100%;
     background: rgba(55, 55, 55, 0.65);
+    font-size: small;
     
 }
 
